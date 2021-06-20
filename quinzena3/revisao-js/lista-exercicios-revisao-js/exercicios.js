@@ -176,7 +176,7 @@ function criaRetangulo(lado1, lado2) {
     perimetro: (2* (lado1 + lado2)),
     area: (lado1*lado2)
   }
-  return dadosRetangulo
+      return dadosRetangulo
 
 }
 
@@ -189,7 +189,7 @@ function anonimizaPessoa(pessoa) {
       nome: "ANÔNIMO"
   }
   
-  return dadosDePessoas
+      return dadosDePessoas
 
 }
 
@@ -211,13 +211,19 @@ function menoresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
+  const multiplicaPorDois = array.map(dobro => dobro*2)
+        return multiplicaPorDois
+   }
 
-}
+
+
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
+  
+   }
 
-}
+
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
