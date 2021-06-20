@@ -253,6 +253,10 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
+  return consultasNome.sort((a, b) => {
+    if (a.nome < b.nome) return -1
+    return 0
+})
 
 }
 
