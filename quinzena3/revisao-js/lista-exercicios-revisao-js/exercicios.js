@@ -229,11 +229,17 @@ function multiplicaArrayPor2S(array) {
 }
   
    
-
-
-
 // EXERCÍCIO 17C
 function verificaParidade(array) {
+  let parImpar = []
+  array.map((numero) => {
+      if (numero % 2 === 0) {
+          parImpar.push(`${numero} é par`)
+      } else {
+          parImpar.push(`${numero} é ímpar`)
+      }
+  })
+          return parImpar
 
 }
 
