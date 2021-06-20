@@ -59,7 +59,7 @@ function retornaExpressoesBooleanas() {
  
    const resposta = [a, b, c, d, e]
  
-   return resposta
+      return resposta
 
 }
 
@@ -239,6 +239,8 @@ function verificaParidade(array) {
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
+     const pessoasQuePodemEntrar = pessoas.filter(pessoa => pessoa.altura>=1.5 && pessoa.idade>14 && pessoa.idade<60)
+       return pessoasQuePodemEntrar
 
 }
 
