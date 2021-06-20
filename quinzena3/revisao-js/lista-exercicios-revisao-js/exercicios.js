@@ -5,8 +5,6 @@ function inverteArray(array) {
     array[array.length - 1 - i]);
     return inverterArray
 
-
-
 }
 
 // EXERCÍCIO 02
@@ -67,8 +65,20 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
+  let numerosPares = []
+  let contador = 0
 
+  while (contador < n) {
+    numerosPares.push(contador * 2)
+  
+    contador++
+  }
+  
+return numerosPares
+  
 }
+
+
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
