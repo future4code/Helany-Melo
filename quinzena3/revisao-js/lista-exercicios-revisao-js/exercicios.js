@@ -94,13 +94,26 @@ function checaTriangulo(a, b, c) {
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-  // Formato do objeto a ser retornado:
-  // {
-  //   maiorNumero: X,
-  //   maiorDivisivelPorMenor: Y,
-  //   diferenca: Z
-  // }
+  if (num1 > num2) {
+    comparacaoDosNumeros.maiorNumero = num1
+    comparacaoDosNumeros.maiorDivisivelPorMenor = num1 % num2 === 0
+    comparacaoDosNumeros.diferenca = num1 - num2
+
+  } else if (num2 > num1) {
+    comparacaoDosNumeros.maiorNumero = num2
+    comparacaoDosNumeros.maiorDivisivelPorMenor = num2 % num1 === 0
+    comparacaoDosNumeros.diferenca = num2 - num1
+  }else{
+    comparacaoDosNumeros.maiorNumero = num2
+    comparacaoDosNumeros.maiorDivisivelPorMenor = num2 % num1 === 0
+    comparacaoDosNumeros.diferenca = 0
+
+  }
+
+  return comparacaoDosNumeros
 }
+ 
+
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
