@@ -267,5 +267,12 @@ function ordenaPorData(consultasData) {
 
 // EXERCÍCIO 20
 function calculaSaldo(contas) {
+  return contas.map(conta => {
+    return {
+        cliente: conta.cliente,
+        saldoTotal: conta.saldoTotal - conta.compras.reduce((acumulador, atual) => acumulador += atual, 0),
+        compras: conta.compras
+    }
+})
 
 }
