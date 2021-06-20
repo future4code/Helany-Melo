@@ -125,8 +125,17 @@ function imprimeChamada() {
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
+  dadosRetangulo = {
+    largura: (lado1),
+    altura: (lado2),
+    perimetro: (2* (lado1 + lado2)),
+    area: (lado1*lado2)
+  }
+  return dadosRetangulo
 
 }
+
+
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
