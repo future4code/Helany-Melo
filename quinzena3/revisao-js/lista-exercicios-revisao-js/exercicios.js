@@ -105,6 +105,12 @@ return [array[array.length - 2], array[1]]
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
+  array.sort(function ordenarArray (x, y) {
+    if (x < y) return -1;
+    if (x > y) return 1;
+    return 0;
+})
+      return array
 
 }
 
