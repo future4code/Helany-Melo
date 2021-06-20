@@ -220,8 +220,15 @@ function multiplicaArrayPor2(array) {
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
+  let novoArray = []
+    array.map((numero) => {
+      let numeroString = numero * 2
+        novoArray.push(numeroString.toString())
+  })
+          return novoArray
+}
   
-   }
+   
 
 
 
