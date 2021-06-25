@@ -1,0 +1,35 @@
+*{margin: 0; padding: 0;}
+
+.cabecalho{
+    background-color: rgb(255, 208, 126);
+    list-style: none;
+    
+}
+
+.rodape img{
+    width: 50px;
+}
+
+.menu{
+    text-decoration: none;
+    background-color: rgb(255, 208, 126);
+    
+}
+
+.mulher img{
+    margin-left: 400px;
+
+}
+
+.rodape img{
+    width: 50px;
+    
+}
+
+.func{
+    margin-top: 10px;
+}
+
+.carrinho{
+    margin: 0;
+}
