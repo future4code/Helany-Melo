@@ -1,4 +1,4 @@
-/*function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
+```function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
 salarioFixo = 2000
     if(qtdeCarrosVendidos !== 0) {
         const valorTotal = valorTotalVendas / qtdeCarrosVendidos
@@ -8,4 +8,13 @@ salarioFixo = 2000
     } else {
         return salarioFixo
     }
-}*/
+}```
+
+
+```function calculaPrecoTotal(quantidade){
+    if(quantidade>=12){
+      return quantidade*1.00
+    }else{
+      return quantidade*1.30
+    }
+  }```
