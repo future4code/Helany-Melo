@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from "styled-components";
 
+
+const FormContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+`
 
 class Etapa3 extends React.Component{
     render(){
         return(
-            <div>
+            <FormContainer>
                 <h2>Etapa 3 - Informações sobre quem não se formou no ensino superior nem está cursando</h2>
 
                 <p>1. Por que você não terminou um curso de graduação?</p>
@@ -20,8 +29,8 @@ class Etapa3 extends React.Component{
 
                 </select>
 
-            </div>
-        )
+                </FormContainer>
+        );
     }
 }
 export default Etapa3;

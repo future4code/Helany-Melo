@@ -1,10 +1,20 @@
-
-
 import React from 'react';
 import Etapa1 from './components/pages/Etapa1';
 import Etapa2 from './components/pages/Etapa2';
 import Etapa3 from './components/pages/Etapa3';
 import EtapaFinal from './components/pages/EtapaFinal';
+import styled from 'styled-components';
+
+
+const Botao = styled.div`
+  display:flex;
+  margin:14px auto;
+  justify-content: center;
+  align-items: center;
+
+
+`
+  
 
 
 
@@ -41,12 +51,14 @@ class App extends React.Component {
         <div>
           {this.renderizaEtapas()}
           {this.state.etapa !== 4 && (
+            <Botao>
            <button onClick={this.proximaEtapa}>Proxima etapa</button>
+           </Botao>
           )}  
           
         </div>
     
-    )
+    );
     }
       
 }

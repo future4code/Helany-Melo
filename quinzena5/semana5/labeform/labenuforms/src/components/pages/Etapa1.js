@@ -1,14 +1,21 @@
-import React from 'react';
+import React from  'react';
+import styled from "styled-components";
 
 
+const FormContainer = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 
+`
 
 
 class Etapa1 extends React.Component {
     render (){
         return(
-            <div>
+            <FormContainer>
                 
                 <h2>Etapa 1 - Dados Gerais</h2>
                 <p>1. Qual o seu nome?</p>
@@ -30,8 +37,8 @@ class Etapa1 extends React.Component {
                     <option value ="Ensino Superior Completo">Ensino Superior Completo</option>
 
                 </select>
-            </div>
-        )
+            </FormContainer>
+        );
     }
 }
 export default Etapa1;
