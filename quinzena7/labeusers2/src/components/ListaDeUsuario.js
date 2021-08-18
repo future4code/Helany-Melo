@@ -6,6 +6,10 @@ const CardUsuario = styled.div`
     padding:10px;
     margin:10px;
     width:400px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
 `
 
 export default class ListaDeUsuario extends React.Component{
@@ -14,12 +18,12 @@ export default class ListaDeUsuario extends React.Component{
     }
 
     componentDidMount(){
-        this.renderizarUsuario()
+        this.mostrarUsuarios()
     }
-    renderizarUsuario = () =>{
+    mostrarUsuarios = () =>{
         const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users";
         axios.get(url,{
-            header:{
+            headers:{
                 Authorization:"helany-melo-johnson"
             }
         })
@@ -30,22 +34,52 @@ export default class ListaDeUsuario extends React.Component{
         })
 
         .catch((err)=>{
-            // alert("Ocorreu um erro!")
+            console.log(err.message)
+            alert("Ocorreu um erro!")
 
         })
     }
 
+    deletarUsuario =(id)=>{
+        const url = `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`
+        axios.delete(url, {
+            headers:{
+                Authorization: "helany-melo-johnson"
+            }
+        })
+
+        .then((res)=>{
+            alert("Usuário deletado")
+            this.mostrarUsuarios()
+
+        })
+
+        .catch((err)=>{
+            
+            alert("Ocorreu um erro!")
+
+        })
+    }
+
+
+    
     render (){
 
-        const listaUsuario = (this.state.usuarios.map((user)=>{
-            return <CardUsuario>{user.name}</CardUsuario>
+        const listaUsuarios = this.state.usuarios.map((user)=>{
+            return <CardUsuario 
+            key={user.id}>{user.name}
+            <button onClick={()=>this.deletarUsuario(user.id)}>Excluir</button>
+            
+            </CardUsuario>
 
-        }))
+        })
+    
         return(
             <div>
                 <button onClick={this.props.irParaRegistro}>Ir para Cadastro</button>
                 <h3>Lista de Usuários</h3>
-                {listaUsuario}
+                {listaUsuarios}
+                
             </div>
         )
     }
