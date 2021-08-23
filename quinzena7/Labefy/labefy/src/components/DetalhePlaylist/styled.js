@@ -16,7 +16,7 @@ h2 {
 `
 
 export const CardMusica = styled.div`
-display: inline-block;
+
 display: flex;
 border: 1px solid black;
 align-items: center;
@@ -42,13 +42,14 @@ input {
     border-bottom: 1px solid white;
     margin-bottom: 15px;
     width:100%;
-    height: 35px;
+    height: 20px;
     color:white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 button {
-    border: none;
+    cursor: pointer;
+    border: gray;
     background-image: linear-gradient(to left, gray, #15d659, gray);
     width:100%;
     height: 35px;

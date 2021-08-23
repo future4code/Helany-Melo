@@ -1,5 +1,4 @@
 import { ContainerListaPlaylists, ListaPlaylistCard } from './styled';
-
 export default function ListaPlaylist(props) {
 
     
@@ -14,7 +13,9 @@ export default function ListaPlaylist(props) {
                         <h3>{playlist.name}</h3>
                         <div>
                             <button onClick={() => props.pegarMusicasPlaylist(playlist.id, playlist.name)}>VER MAIS</button>
-                            <button onClick={() => props.apagarPlaylist(playlist.id)}>EXCLUIR</button>
+                            <button onClick={() => props.apagarPlaylist(playlist.id)}>
+                            EXCLUIR
+                            </button>
                         </div>
                     </ListaPlaylistCard>
                 )

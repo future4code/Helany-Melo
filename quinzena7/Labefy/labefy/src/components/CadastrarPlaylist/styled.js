@@ -6,7 +6,6 @@ export const ContainerCriaPlaylist = styled.div`
 
 flex-direction: column;
 margin: auto;
-flex-grow: 1;
 width: 30%;
 
 input {
@@ -19,15 +18,16 @@ input {
     align-items: center;
     display: flex;
     color:white;
-    font-size:35px;
+    font-size:25px;
     margin: auto;
-    width: 500px;
+    width: 400px;
     :focus {
       outline: none;
     }
 }
 
 button {
+    cursor:pointer;
     display:flex;
     margin: auto;
     margin-top: 40px;
@@ -36,7 +36,7 @@ button {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     flex-direction: column;
     border-radius:15px;
     border: 1px solid gray;

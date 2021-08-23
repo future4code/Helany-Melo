@@ -29,6 +29,7 @@ flex-direction: left;
 
 
 button {
+    cursor:pointer;
     margin-left: 10px;
     border: 1px solid gray;
     border-radius:15px;

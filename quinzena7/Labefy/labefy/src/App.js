@@ -8,8 +8,6 @@ import GlobalFonts from './fonts/fonts';
 import swal from "sweetalert";
 
 
-
-
 const BASE_URL = "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists"
 const header = {
   headers:
@@ -122,9 +120,9 @@ export default class App extends React.Component {
         inputUrlMusica: ""
       })
       this.pegarMusicasPlaylist(this.state.playlistDetalheId, this.state.playlistDetalheNome)
-      swal("", "Música adicionada à !", "success", {
+      swal("", "Música adicionada à Playlist!", "success", {
         button: false,
-        timer: 3000
+        timer: 2000   
       });
     }
     catch (error) {

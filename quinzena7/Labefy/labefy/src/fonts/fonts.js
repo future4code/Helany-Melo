@@ -9,7 +9,6 @@ export default createGlobalStyle`
         src: local('Gotham Pro'), local('GothamPro'),
         url(${NameOfYourFontWoff2}) format('woff2'),
         url(${NameOfYourFontWoff}) format('woff');
-        font-weight: 300;
         font-style: normal;
     }
 `;

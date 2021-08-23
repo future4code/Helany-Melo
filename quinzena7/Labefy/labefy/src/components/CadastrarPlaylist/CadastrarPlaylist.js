@@ -11,7 +11,7 @@ export default function CadastrarPlaylist(props) {
                 placeholder="Nome da Playlist"
                 placeholderTextColor="white"/>
 
-                <button onClick={props.cadastrarPlaylist}>Adicionar</button>
+                <button onClick={props.cadastrarPlaylist}>Adicionar♫</button>
             </div>
         </ContainerCriaPlaylist>
     )

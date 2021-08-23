@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 html, body {
     margin:0;
     font-family: 'Signika', sans-serif;
+
 }
 
 button {
@@ -13,12 +14,19 @@ button {
 `
 
 export const BaseSite = styled.div`
-display: flex;
-flex-direction: column;
-background-size: cover;
-background-image: url("https://wallpapersfull.com/wallpapers/2019/violao-azul-wallpaper-5920.jpg");
-height: 100vh;
-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-image: url("https://wallpapersfull.com/wallpapers/2019/violao-azul-wallpaper-5920.jpg");
+    background-repeat: no-repeat;
+    background:cover;
+    background-size: 100%;
+    height: 100vh;    
+    width: 100vw;
+
+
+
 
 
 
@@ -48,6 +56,7 @@ margin: auto;
 
 
 button {
+    cursor:pointer;
     border: 1px solid gray;
     border-radius: 15px;
     background-image: linear-gradient(to left, gray, #15d659, gray);
@@ -65,6 +74,7 @@ text-align: center;
 padding: 25px;
 background-color: black;
 color:white;
+height:60px;
 
 
 `

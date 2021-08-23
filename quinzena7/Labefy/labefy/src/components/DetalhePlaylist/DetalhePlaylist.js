@@ -1,7 +1,10 @@
 import './styled'
 import { ContainerDetalhes, CardMusica, CardAdicionar } from './styled'
+import axios from "axios";
+import swal from "sweetalert"
 
 export default function DetalhePlaylist(props) {
+   
     return (
         <ContainerDetalhes>
         <h1>Playlist: {props.playlistDetalheNome}</h1>
@@ -28,6 +31,7 @@ export default function DetalhePlaylist(props) {
                    <h4>Nome:</h4> <p>{musica.name}</p>
                    <h4>Artista:</h4> <p>{musica.artist}</p>
                     <h4>Música:</h4> <p><audio controls src={musica.url}/></p>
+                    
                 </CardMusica>)
         })}
     </ContainerDetalhes>
