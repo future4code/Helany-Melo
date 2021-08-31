@@ -10,12 +10,11 @@ const ListContainer = styled.div`
 
 function MatchList (){
     return(
-        <div>
+        <ListContainer>
             <MatchListItem/>
             <MatchListItem/>
             <MatchListItem/>
-
-            </div>
+        </ListContainer>
     )
 }
 

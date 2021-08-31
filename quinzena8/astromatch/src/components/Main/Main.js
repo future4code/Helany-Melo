@@ -10,6 +10,8 @@ const MainContainer = styled.div`
  width:400px;
  height:700px;
  margin: auto;
+ display:flex;
+ flex-direction:color;
 `
 
 
