@@ -16,16 +16,19 @@ const ListItemContainer = styled.div`
 const Avatar = styled.img`
     border-radius:50%;
     margin-right: 8px;
+    height: 30px;
+    width: 30px;
 
 `
 
-function MatchListItem (){
+function MatchListItem(props) {
+    const profile = props.profile
     return (
-        <ListItemContainer>
-            <Avatar src={"https://picsum.photos/30/30"}/>
-            <p>Nome da Pessoa</p>
-        </ListItemContainer>
+      <ListItemContainer>
+        <Avatar src={profile.photo}/>
+        <p>{profile.name}</p>
+      </ListItemContainer>
     )
-}
+  }
 
 export default MatchListItem;

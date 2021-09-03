@@ -2,27 +2,30 @@ import React from "react";
 import styled from "styled-components";
 
 const ProfileCardContainer = styled.div`
-    margin:16px;
-    border: 1px solid orange;
-    
-
-`
+  margin: 16px;
+  border: 1px solid black;
+`;
 
 const ProfilePicture = styled.img`
-    width:100%;
-`
+  width: 100%;
+  display: block;
+  max-height: 350px;
+`;
 
 const ProfileInfo = styled.div`
-    padding: 0 16px;
+  padding: 0 16px;
+`;
 
-`
 
-function ProfileCard (){
+function ProfileCard (props){
+    const profile = props.profile
     return (
         <ProfileCardContainer>
-        <ProfilePicture src={'https://picsum.photos/300/400'}/>
-        <ProfileInfo>Nome, 20</ProfileInfo>
-        <ProfileInfo>Descrição da Pessoa</ProfileInfo>
+        <ProfilePicture src={profile.photo}/>
+        <ProfileInfo>
+            <p>{profile.name}, {profile.age}</p>
+            <p>{profile.bio}</p>
+        </ProfileInfo>
         </ProfileCardContainer>
     )
 }

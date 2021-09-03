@@ -1,22 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-const AppBarContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid orange;
-    align-items: center;
-    padding: 0 8px;
 
+const AppBarContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+  padding: 0 8px;
 `
 
-function AppBar (){
+function AppBar (props){
     return (
         <AppBarContainer>
-            <button>Escolher</button>
+            <button onClick={props.goToChooseProfile}>Escolher</button>
             <p>ASTROMATCH</p>
-            <button>Lista</button>
-
+            <button onClick={props.goToMatchList}>Lista</button>
         </AppBarContainer>
     )
 }
