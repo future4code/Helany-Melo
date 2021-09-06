@@ -101,9 +101,9 @@ class App extends React.Component {
       fotoPost={post.fotoPost}
     />
 
-    
-    
-    )
+     postman
+
+
    
   })
 
