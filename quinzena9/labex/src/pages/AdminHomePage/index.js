@@ -21,7 +21,7 @@ export default function AdminHomePage() {
   const history = useHistory();
   useProtectedPage();
   const listTrips = useRequestData(
-    "https://us-central1-labenu-apis.cloudfunctions.net/labeX/giselle-rosa-cruz/trips",
+    "https://us-central1-labenu-apis.cloudfunctions.net/labeX/helany-melo-johnson/trips",
     []
   );
 
@@ -33,7 +33,7 @@ export default function AdminHomePage() {
     const token = window.localStorage.getItem("token");
     axios
       .delete(
-        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/giselle-rosa-cruz/trips/${id}`,
+        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/helany-melo-johnson/trips/${id}`,
         {
           headers: {
             auth: token,

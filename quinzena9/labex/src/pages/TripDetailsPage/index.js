@@ -32,7 +32,7 @@ export default function TripDetailsPage() {
 
     axios
       .get(
-        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/giselle-rosa-cruz/trip/${params.id}`,
+        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/helany-melo-johnson/trip/${params.id}`,
         {
           headers: {
             auth: token,
@@ -53,7 +53,7 @@ export default function TripDetailsPage() {
     const body = { approve: decision };
     axios
       .put(
-        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/giselle-rosa-cruz/trips/${tripId}/candidates/${candidateId}/decide`,
+        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/helany-melo-johnson/trips/${tripId}/candidates/${candidateId}/decide`,
         body,
         {
           headers: {

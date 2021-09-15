@@ -27,7 +27,7 @@ export default function FormAppPage() {
     }, []);
 
     const listTrips = useRequestData(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labeX/giselle-rosa-cruz/trips",
+      "https://us-central1-labenu-apis.cloudfunctions.net/labeX/helany-melo-johnson/trips",
       []
     );
 

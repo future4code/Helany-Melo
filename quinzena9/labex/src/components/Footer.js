@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <FooterDiv>
       <FooterRedes>
-        <LinksFooter href="https://www.facebook.com/">Facebook</LinksFooter>
+        <LinksFooter></LinksFooter>
 
-        <LinksFooter href="https://www.instagram.com/">Instagram</LinksFooter>
+        <LinksFooter></LinksFooter>
       </FooterRedes>
 
-      <FooterEmail>Contato@Futurecar.com.br</FooterEmail>
+      
     </FooterDiv>
   );
 }

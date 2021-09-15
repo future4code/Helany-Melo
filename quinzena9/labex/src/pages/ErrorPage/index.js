@@ -24,8 +24,7 @@ export default function ErrorPage() {
 
       <TextContent>
         <Text>
-          Ops, a página não foi encontrada! Mas não precisa ficar triste ainda
-          podemos ver mais viagens
+          a página não foi encontrada! 
         </Text>
       </TextContent>
 

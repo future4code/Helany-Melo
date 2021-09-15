@@ -46,7 +46,7 @@ export default function CreateTripPage() {
           history.push("/admin");
         })
         .catch((err) => {
-          alert("Erro interno, tente novamente mais tarde");
+          alert("Erro interno, tente novamente!");
         });
     };
 
@@ -77,6 +77,7 @@ export default function CreateTripPage() {
               <option value disabled selected>
                 Selecione um planeta
               </option>
+              <option></option>
               <option value="Mercúrio">Mercúrio</option>
               <option value="Vênus">Vênus</option>
               <option value="Terra">Terra</option>
