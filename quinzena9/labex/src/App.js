@@ -1,20 +1,24 @@
-import React  from "react";
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer"
-import Body from "./components/Body";
+import "./App.css";
+import Router from "./routes/Router";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer";
+import styled from "styled-components";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Body/>
-      <Footer/>
+    <div>
+      <PageContent>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </PageContent>
 
-
-
-      
+      <Footer />
     </div>
   );
 }
-
-export default App;
+const PageContent = styled.div`
+  min-height: calc(100vh - 39.2px);
+  padding-bottom: 50px;
+  box-sizing: border-box;
+`;
